@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Car</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+   <script type="text/javascript">
+    /* 此check()函式在最後的「傳送」案鈕會用到 */
+    function check() {
+        /* 在名為reg的表單裡判斷名稱為myname的文字方塊是否為空字串，是的話顯示「未輸入姓名」 */
+        if (reg.myname.value == "") {
+            alert("Please enter your Name!!!");
+        }
+        
+         if (reg.mymail.value == "") {
+            alert("Please enter your Email!!!");
+        }
+
+        /* 表單資料皆有填寫的話，則將資料送出 */
+        else reg.submit();
+    }
+
+</script>
+
+<style> 
+    body{
+          background:black;
+          height: 100%;
+          font-size: 1.5em;
+          
+      } 
+
+    h1{
+        color: #00FA9A;
+        font-family:arial black;
+      }
+    
+           
+input[type=text] {
+    background-color:black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 50%;
+    min-width: 200px;
+}
+    
+</style>
+
+
+</head>
+
+
+<body>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container-fluid">
+       <div class="navbar-header">
+       
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-id" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>             
+                    <span class="icon-bar"></span>  
+                           
+                    </button>
+                    <a class="navbar-brand" href="#" style="width: 60px">
+                    <img src="img\gear.png" alt="Brand" style="width: 40px; height:40px;
+                    position: absolute; top:5px; left: 10px;">
+                    
+                    </a>      
+                     </div> 
+                     <div class="collapse navbar-collapse" id="menu-id">          <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li> 
+                          <li><a href="about.html">About</a></li>               
+                          <li><a href="model.html">Model</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          
+                            </ul>
+                                 </div>
+                                    </div>
+                                    </nav>
+ 
+
+  
+
+
+
+<form name="reg" method="post" action="mailto:someone@example.com" style="color:#00FA9A;">
+<br><br><br>
+<h1 style="text-align: center">Contact us</h1><hr>
+ 
+
+ 
+ 
+   <br>&nbsp;&nbsp;Name：<br>&nbsp;&nbsp;<input type="text" name="myname" placeholder="Enter your name" value=""><br>
+  
+  <br>&nbsp;&nbsp;Mail：<br>&nbsp;&nbsp;<input type="text" name="mymail" placeholder="ex:abc123@gmail.com"  value=""><br>
+
+
+   <br>&nbsp;&nbsp;Comments：<br>&nbsp;&nbsp;
+ <textarea name=courseList cols=50 rows=10 placeholder="Contact us for questions & orders"></textarea> <br>
+  
+
+  
+   <br>
+    &nbsp;&nbsp; <input type="submit" onClick="check()" value="submit" class="btn btn-success" role="button"> 
+   <input type="reset" value="reset" class="btn btn-info" role="button"> 
+   
+   
+
+   
+   
+   
+   <hr>
+    <h6 style="text-align: center; position: relative;">
+          Copyright © 2017 All rights reserved.</h6>
+
+
+     
+            
+</form>
+
+
+
+
+
+</body>
+</html>
